@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #ac0000, #292D36); /* Red and gray gradient background */
+    backdrop-filter: blur(20px); /* Glassy effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.app {
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif; /* Elegant font */
+    transition: color 0.3s;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #0bd; /* Darker red on hover or active */
+}
+
+.logo-container img {
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.logo-container img:hover {
+    opacity: 1;
+}
+
+/* Hover effect on the header background */
+header:hover {
+    background: linear-gradient(to right, #292D36, #ac0000); /* Reverse gradient on hover */
+}
+
+/* Hover effect on the app name */
+header:hover .app {
+    color: #ac0000; /* Darker red on hover */
+}
+
+
+
+main section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+main section:nth-child(odd) {
+    background: #292D36;
+}
+
+main section:nth-child(even) {
+    background: #e6e6e9;
+}
+
+.fitur {
+    margin: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 16px;
+    color: #4097aa;
+    text-decoration: none;
+    transition: .3s;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4097aa;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #0bd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #ac0000, #292D36); /* Red and gray gradient background */
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow at the top */
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer:hover {
+    background: linear-gradient(to right, #292D36, #ac0000);
+}
+
+
+.logo-and-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+#dynamicLogoContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#dynamicLogo {
+    opacity: 0.8;
+    width: auto;
+    max-width: 100%;
+}
+
+#beranda,
+#unduh {
+    color: #fff;
+}
+
+#dynamicLogo {
+    width: auto;
+    max-width: 100%;
+    animation: logoAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.slideshow-container {
+    max-width: 70%; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the slideshow container */
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+    margin-top: 10px;
+}
+
+.mySlides {
+    text-align: center; /* Center the slideshow images */
+}
+
+.feature-preview {
+    display: inline-block; /* Align images in a row */
+    margin: 0 5px; /* Adjust margin as needed */
+    max-width: 100%;
+}
+
+/* Tambahkan ini pada bagian akhir CSS Anda */
+
+@keyframes moveButton {
+    0% {
+        transform: translateY(0) translateX(0);
+        background-color: #4097aa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    25% {
+        transform: translateY(-5px) translateX(5px);
+        background-color: #0bd;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        transform: translateY(0) translateX(0);
+        background-color: #292D36;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+    75% {
+        transform: translateY(5px) translateX(-5px);
+        background-color: #ac0000;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+#downloadButton {
+    animation: moveButton 2s ease-in-out infinite; /* Sesuaikan durasi, timing function, dan iterasi animasi sesuai keinginan Anda */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#downloadButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+#downloadButton:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.tentang .kontak,
+.tentang .instagram {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tentang .kontak img,
+.tentang .instagram img {
+    margin-right: 10px;
+}
+
+.tentang .kontak a,
+.tentang .instagram a {
+    color: #4097aa;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.tentang .kontak a:hover,
+.tentang .instagram a:hover {
+    color: #0bd;
+}
