@@ -222,7 +222,7 @@ footer:hover {
     display: inline-block;
     margin: 0 5px;
     max-width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 5); /* Tambahkan bayangan dengan warna dan ukuran tertentu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
 }
 
 
@@ -296,7 +296,7 @@ footer:hover {
 
 @media screen and (max-width: 600px) {
     header {
-        padding: 10px 15px;
+        padding: 10px;
     }
 
     .app {
@@ -313,28 +313,28 @@ footer:hover {
     }
 
     main section {
-        padding: 30px 15px;
+        padding: 20px;
     }
 
     h2 {
-        font-size: 24px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
     p,
     a {
         font-size: 14px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     footer {
-        padding: 10px 15px;
+        padding: 10px;
     }
 
     .logo-and-text-container {
@@ -343,9 +343,9 @@ footer:hover {
     }
 
     .text-container {
-        padding-left: 0;
+        padding: 0;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     #dynamicLogoContainer {
@@ -354,7 +354,7 @@ footer:hover {
 
     .slideshow-container {
         max-width: 100%;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .feature-preview {
