@@ -225,8 +225,6 @@ footer:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 5);
 }
 
-/* Existing styles */
-
 /* Media query for screens 600 pixels or less */
 @media screen and (max-width: 600px) {
     header {
@@ -240,7 +238,6 @@ footer:hover {
     nav {
         flex-direction: column;
         align-items: center;
-        display: flex;
     }
 
     nav a {
@@ -318,5 +315,20 @@ footer:hover {
     .tentang .instagram img {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    /* Adjustments for the header background */
+    header {
+        background: linear-gradient(to right, #ac0000, #292D36);
+    }
+
+    /* Adjustments for the header on hover */
+    header:hover {
+        background: linear-gradient(to right, #292D36, #ac0000);
+    }
+
+    /* Adjustments for the app color on header hover */
+    header:hover .app {
+        color: #ac0000;
     }
 }
