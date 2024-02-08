@@ -225,7 +225,6 @@ footer:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 5);
 }
 
-
 @media screen and (max-width: 600px) {
     header {
         padding: 10px;
@@ -238,7 +237,7 @@ footer:hover {
     nav {
         flex-direction: column;
         align-items: center;
-        display: flex; /* Make the navigation visible by default */
+        display: flex;
     }
 
     nav a {
@@ -312,4 +311,5 @@ footer:hover {
         margin-bottom: 10px;
     }
 }
+
 
