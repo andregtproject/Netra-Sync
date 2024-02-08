@@ -1,22 +1,23 @@
-let sections = document.querySelectorAll('section');
+let sections = document.querySelectorAll('section, article');
 let navLinks = document.querySelectorAll('header nav a');
+
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-        if(top >= offset && top < offset + height) {
+
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
-        };
+        }
     });
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the width of the text and set it as the logo container width
     var textContainer = document.querySelector(".text-container");
     var dynamicLogoContainer = document.getElementById("dynamicLogoContainer");
     var dynamicLogo = document.getElementById("dynamicLogo");
@@ -50,6 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[slideIndex - 1].style.display = 'block';
         setTimeout(function () {
             showSlides(slideshowId, slideIndex);
-        }, 2000); // Change slide every 2 seconds
+        }, 2000);
     }
 });

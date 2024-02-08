@@ -6,13 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    color: #fff;
 }
 
 header {
@@ -20,9 +14,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #ac0000, #292D36); /* Red and gray gradient background */
-    backdrop-filter: blur(20px); /* Glassy effect */
+    padding: 15px 20px;
+    background: linear-gradient(to right, #ac0000, #292D36);
+    backdrop-filter: blur(20px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,11 +25,11 @@ header {
 }
 
 .app {
-    font-size: 28px;
+    font-size: 24px;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-family: 'Poppins', sans-serif; /* Elegant font */
+    font-family: 'Poppins', sans-serif;
     transition: color 0.3s;
 }
 
@@ -48,13 +42,13 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 30px;
+    margin-left: 20px;
     transition: color 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-    color: #0bd; /* Darker red on hover or active */
+    color: #0bd;
 }
 
 .logo-container img {
@@ -66,16 +60,21 @@ nav a.active {
     opacity: 1;
 }
 
-/* Hover effect on the header background */
 header:hover {
-    background: linear-gradient(to right, #292D36, #ac0000); /* Reverse gradient on hover */
+    background: linear-gradient(to right, #292D36, #ac0000);
 }
 
-/* Hover effect on the app name */
 header:hover .app {
-    color: #ac0000; /* Darker red on hover */
+    color: #ac0000;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ac0000;
+}
 
 
 main section {
@@ -88,11 +87,11 @@ main section {
 }
 
 main section:nth-child(odd) {
-    background: #292D36;
+    background: #ac0000;
 }
 
 main section:nth-child(even) {
-    background: #e6e6e9;
+    background: #292D36;
 }
 
 .fitur {
@@ -102,7 +101,8 @@ main section:nth-child(even) {
 h2 {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 h3 {
@@ -123,29 +123,33 @@ a {
     transition: .3s;
 }
 
-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #4097aa;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: .3s;
-    display: block;
-    margin: 0 auto;
-}
-
-button:hover {
-    background-color: #0bd;
+article {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background: linear-gradient(to right, #ac0000, #292D36); /* Red and gray gradient background */
+    background: linear-gradient(to right, #ac0000, #292D36);
     color: #fff;
     width: 100%;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow at the top */
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+aside a {
+    color: #4097aa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+aside a:hover {
+    color: #0bd;
 }
 
 footer p {
@@ -203,24 +207,24 @@ footer:hover {
 }
 
 .slideshow-container {
-    max-width: 70%; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the slideshow container */
-    overflow: hidden; /* Hide overflow */
+    max-width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
     position: relative;
     margin-top: 10px;
 }
 
 .mySlides {
-    text-align: center; /* Center the slideshow images */
+    text-align: center;
 }
 
 .feature-preview {
-    display: inline-block; /* Align images in a row */
-    margin: 0 5px; /* Adjust margin as needed */
+    display: inline-block;
+    margin: 0 5px;
     max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5); /* Tambahkan bayangan dengan warna dan ukuran tertentu */
 }
 
-/* Tambahkan ini pada bagian akhir CSS Anda */
 
 @keyframes moveButton {
     0% {
@@ -246,7 +250,7 @@ footer:hover {
 }
 
 #downloadButton {
-    animation: moveButton 2s ease-in-out infinite; /* Sesuaikan durasi, timing function, dan iterasi animasi sesuai keinginan Anda */
+    animation: moveButton 2s ease-in-out infinite;
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
     cursor: pointer;
     border: none;
