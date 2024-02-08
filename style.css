@@ -294,87 +294,88 @@ footer:hover {
     color: #0bd;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     header {
-        padding: 10px;
+        padding: 10px 15px;
     }
 
     .app {
-        font-size: 16px;
-    }
-
-    .menu-toggle {
-        display: block;
-        font-size: 12px;
-        cursor: pointer;
-        color: #fff;
+        font-size: 18px;
     }
 
     nav {
         flex-direction: column;
         align-items: center;
-        display: none;
-    }
-
-    nav.active {
-        display: flex;
     }
 
     nav a {
-        margin: 5px 0;
+        margin: 10px 0;
     }
 
     main section {
-        padding: 20px 10px;
-    }
-
-    .fitur {
-        margin: 10px;
+        padding: 30px 15px;
     }
 
     h2 {
-        font-size: 14px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     h3 {
-        font-size: 12px;
-        margin-bottom: 5px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
-    p {
-        font-size: 10px;
-        margin-bottom: 5px;
+    p,
+    a {
+        font-size: 14px;
+        margin-bottom: 15px;
     }
 
-    article {
-        padding: 20px 5px;
+    footer {
+        padding: 10px 15px;
     }
 
-    #dynamicLogoContainer,
-    #dynamicLogo {
-        width: 50%;
+    .logo-and-text-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    #sighthubSlideshow,
-    #voicemateSlideshow {
-        max-width: 50%;
+    .text-container {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #dynamicLogoContainer {
+        margin-bottom: 10px;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .feature-preview {
+        margin: 10px 0;
     }
 
     #downloadButton {
-        padding: 6px 12px;
-        font-size: 12px;
+        padding: 12px 24px;
+        font-size: 16px;
     }
 
     .tentang .kontak,
     .tentang .instagram {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15px;
     }
 
     .tentang .kontak img,
     .tentang .instagram img {
-        margin: 5px 0;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
