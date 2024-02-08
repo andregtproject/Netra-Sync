@@ -300,12 +300,12 @@ footer:hover {
     }
 
     .app {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .menu-toggle {
         display: block;
-        font-size: 20px;
+        font-size: 12px;
         cursor: pointer;
         color: #fff;
     }
@@ -325,46 +325,46 @@ footer:hover {
     }
 
     main section {
-        padding: 40px 20px;
+        padding: 20px 10px;
     }
 
     .fitur {
-        margin: 20px;
+        margin: 10px;
     }
 
     h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 12px;
+        margin-bottom: 5px;
     }
 
     p {
-        font-size: 14px;
-        margin-bottom: 15px;
+        font-size: 10px;
+        margin-bottom: 5px;
     }
 
     article {
-        padding: 40px 10px;
+        padding: 20px 5px;
     }
 
     #dynamicLogoContainer,
     #dynamicLogo {
-        width: 100%;
+        width: 50%;
     }
 
     #sighthubSlideshow,
     #voicemateSlideshow {
-        max-width: 100%;
+        max-width: 50%;
     }
 
     #downloadButton {
-        padding: 12px 25px;
-        font-size: 16px;
+        padding: 6px 12px;
+        font-size: 12px;
     }
 
     .tentang .kontak,
