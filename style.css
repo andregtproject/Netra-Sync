@@ -227,89 +227,79 @@ footer:hover {
 
 @media screen and (max-width: 600px) {
     header {
-        padding: 10px;
+        padding: 10px 15px;
     }
 
     .app {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     nav {
         flex-direction: column;
         align-items: center;
-        display: flex;
     }
 
     nav a {
         margin: 10px 0;
     }
 
-    main section {
-        padding: 20px;
+    .logo-container img {
+        margin: 10px 0;
+    }
+
+    main section,
+    article {
+        padding: 30px 10px;
     }
 
     h2 {
-        font-size: 22px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        font-size: 28px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
 
     p,
     a {
         font-size: 14px;
-        margin-bottom: 10px;
     }
 
     footer {
-        padding: 10px;
+        padding: 15px 0;
+    }
+
+    footer p {
+        margin-bottom: 5px;
     }
 
     .logo-and-text-container {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
     .text-container {
-        padding: 0;
-        text-align: center;
-        margin-top: 15px;
+        padding-left: 10px;
+        max-width: 100%;
     }
 
-    #dynamicLogoContainer {
+    #dynamicLogo {
         margin-bottom: 10px;
     }
 
     .slideshow-container {
         max-width: 100%;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .feature-preview {
         margin: 10px 0;
     }
 
-    #downloadButton {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
-
-    .tentang .kontak,
-    .tentang .instagram {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .tentang .kontak img,
-    .tentang .instagram img {
-        margin-right: 0;
-        margin-bottom: 10px;
+    .fitur {
+        margin: 20px;
     }
 }
-
-
