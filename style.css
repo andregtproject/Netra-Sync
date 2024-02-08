@@ -226,74 +226,6 @@ footer:hover {
 }
 
 
-@keyframes moveButton {
-    0% {
-        transform: translateY(0) translateX(0);
-        background-color: #4097aa;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    25% {
-        transform: translateY(-5px) translateX(5px);
-        background-color: #0bd;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    }
-    50% {
-        transform: translateY(0) translateX(0);
-        background-color: #292D36;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    }
-    75% {
-        transform: translateY(5px) translateX(-5px);
-        background-color: #ac0000;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    }
-}
-
-#downloadButton {
-    animation: moveButton 2s ease-in-out infinite;
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 30px;
-    font-size: 18px;
-    color: #fff;
-}
-
-#downloadButton:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-}
-
-#downloadButton:active {
-    transform: scale(0.9);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.tentang .kontak,
-.tentang .instagram {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.tentang .kontak img,
-.tentang .instagram img {
-    margin-right: 10px;
-}
-
-.tentang .kontak a,
-.tentang .instagram a {
-    color: #4097aa;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.tentang .kontak a:hover,
-.tentang .instagram a:hover {
-    color: #0bd;
-}
-
 @media screen and (max-width: 600px) {
     header {
         padding: 10px;
@@ -306,6 +238,7 @@ footer:hover {
     nav {
         flex-direction: column;
         align-items: center;
+        display: flex;
     }
 
     nav a {
@@ -355,10 +288,16 @@ footer:hover {
     .slideshow-container {
         max-width: 100%;
         margin-top: 15px;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     .feature-preview {
-        margin: 10px 0;
+        display: inline-block;
+        margin: 0 5px;
+        max-width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        vertical-align: top;
     }
 
     #downloadButton {
