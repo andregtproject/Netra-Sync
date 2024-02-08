@@ -225,6 +225,9 @@ footer:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 5);
 }
 
+/* Existing styles */
+
+/* Media query for screens 600 pixels or less */
 @media screen and (max-width: 600px) {
     header {
         padding: 10px 15px;
@@ -241,6 +244,7 @@ footer:hover {
 
     nav a {
         margin: 10px 0;
+        font-size: 16px;
     }
 
     .logo-container img {
@@ -249,7 +253,7 @@ footer:hover {
 
     main section,
     article {
-        padding: 30px 10px;
+        padding: 30px 15px;
     }
 
     h2 {
@@ -266,6 +270,7 @@ footer:hover {
     p,
     a {
         font-size: 14px;
+        margin-bottom: 15px;
     }
 
     footer {
@@ -282,12 +287,14 @@ footer:hover {
     }
 
     .text-container {
-        padding-left: 10px;
+        padding: 0 15px; /* Added padding on both sides for better spacing */
         max-width: 100%;
     }
 
     #dynamicLogo {
         margin-bottom: 10px;
+        width: 80%;
+        max-width: 100%; /* Ensure the logo doesn't exceed its container */
     }
 
     .slideshow-container {
