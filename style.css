@@ -230,83 +230,93 @@ footer:hover {
 /* Media query for screens 600 pixels or less */
 @media screen and (max-width: 600px) {
     header {
-        padding: 10px 15px;
+        padding: 10px;
     }
 
     .app {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     nav {
         flex-direction: column;
         align-items: center;
+        display: flex;
     }
 
     nav a {
         margin: 10px 0;
-        font-size: 16px;
     }
 
-    .logo-container img {
-        margin: 10px 0;
-    }
-
-    main section,
-    article {
-        padding: 30px 15px;
+    main section {
+        padding: 20px;
     }
 
     h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        font-size: 22px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
     p,
     a {
         font-size: 14px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     footer {
-        padding: 15px 0;
-    }
-
-    footer p {
-        margin-bottom: 5px;
+        padding: 10px;
     }
 
     .logo-and-text-container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
     .text-container {
-        padding: 0 15px; /* Added padding on both sides for better spacing */
-        max-width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-top: 15px;
     }
 
-    #dynamicLogo {
+    #dynamicLogoContainer {
         margin-bottom: 10px;
-        width: 80%;
-        max-width: 100%; /* Ensure the logo doesn't exceed its container */
     }
 
     .slideshow-container {
         max-width: 100%;
-        margin-top: 10px;
+        margin-top: 15px;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     .feature-preview {
-        margin: 10px 0;
+        display: inline-block;
+        margin: 0 5px;
+        max-width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        vertical-align: top;
     }
 
-    .fitur {
-        margin: 20px;
+    #downloadButton {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .tentang .kontak,
+    .tentang .instagram {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .tentang .kontak img,
+    .tentang .instagram img {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
