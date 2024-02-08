@@ -222,113 +222,74 @@ footer:hover {
     display: inline-block;
     margin: 0 5px;
     max-width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5); 
 }
 
-/* Media query for screens 600 pixels or less */
-@media screen and (max-width: 600px) {
-    header {
-        padding: 10px;
-    }
 
-    .app {
-        font-size: 18px;
+@keyframes moveButton {
+    0% {
+        transform: translateY(0) translateX(0);
+        background-color: #4097aa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
+    25% {
+        transform: translateY(-5px) translateX(5px);
+        background-color: #0bd;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        transform: translateY(0) translateX(0);
+        background-color: #292D36;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+    75% {
+        transform: translateY(5px) translateX(-5px);
+        background-color: #ac0000;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+}
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+#downloadButton {
+    animation: moveButton 2s ease-in-out infinite;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+}
 
-    nav a {
-        margin: 10px 0;
-    }
+#downloadButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
 
-    main section {
-        padding: 20px;
-    }
+#downloadButton:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
-    h2 {
-        font-size: 22px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+.tentang .kontak,
+.tentang .instagram {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
-    h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
+.tentang .kontak img,
+.tentang .instagram img {
+    margin-right: 10px;
+}
 
-    p,
-    a {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
+.tentang .kontak a,
+.tentang .instagram a {
+    color: #4097aa;
+    text-decoration: none;
+    transition: .3s;
+}
 
-    footer {
-        padding: 10px;
-    }
-
-    .logo-and-text-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-container {
-        padding: 0;
-        text-align: center;
-        margin-top: 15px;
-    }
-
-    #dynamicLogoContainer {
-        margin-bottom: 10px;
-    }
-
-    .slideshow-container {
-        max-width: 100%;
-        margin-top: 15px;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
-    .feature-preview {
-        display: inline-block;
-        margin: 0 5px;
-        max-width: 100%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        vertical-align: top;
-    }
-
-    #downloadButton {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
-
-    .tentang .kontak,
-    .tentang .instagram {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    .tentang .kontak img,
-    .tentang .instagram img {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    /* Adjustments for the header background */
-    header {
-        background: linear-gradient(to right, #ac0000, #292D36);
-    }
-
-    /* Adjustments for the header on hover */
-    header:hover {
-        background: linear-gradient(to right, #292D36, #ac0000);
-    }
-
-    /* Adjustments for the app color on header hover */
-    header:hover .app {
-        color: #ac0000;
-    }
+.tentang .kontak a:hover,
+.tentang .instagram a:hover {
+    color: #0bd;
 }
