@@ -15,6 +15,7 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 20px;
+    margin-bottom: 20px;
     background: linear-gradient(to right, #ac0000, #292D36);
     backdrop-filter: blur(20px);
     display: flex;
