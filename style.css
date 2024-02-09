@@ -76,7 +76,6 @@ body {
     background-color: #ac0000;
 }
 
-
 main section {
     min-height: 100vh;
     display: flex;
@@ -142,16 +141,6 @@ footer {
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
 }
 
-aside a {
-    color: #4097aa;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-aside a:hover {
-    color: #0bd;
-}
-
 footer p {
     margin-bottom: 10px;
 }
@@ -160,12 +149,12 @@ footer:hover {
     background: linear-gradient(to right, #292D36, #ac0000);
 }
 
-
 .logo-and-text-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .text-container {
@@ -177,7 +166,6 @@ footer:hover {
 
 #dynamicLogoContainer {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 #dynamicLogo {
@@ -222,7 +210,7 @@ footer:hover {
     display: inline-block;
     margin: 0 5px;
     max-width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 5); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
 }
 
 
